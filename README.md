@@ -75,15 +75,6 @@ Edit the task briefs in `tools/workflows.txt` or shared templates in
 Commit both the input and generated files. Run `python3 tools/build.py --check`
 and, with Claude Code installed, `claude plugin validate .`.
 
-## Publish on GitHub
-
-Create a public repository named `luna-agent-foundry` under
-`Hoddz-Trends-LLC`. From the extracted folder, push its contents as the repo root.
-Include hidden directories, especially `.claude-plugin/` and `.github/`. If you
-publish under a different owner, update the GitHub coordinates in this README,
-`install.sh` and `.claude-plugin/plugin.json`. Verify the public install command
-in a fresh Claude Code environment, then optionally tag the release as `v1.0.0`.
-
 ## License
 
 [MIT](LICENSE) · Hoddz Trends LLC
