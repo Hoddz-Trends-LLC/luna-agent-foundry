@@ -1,0 +1,111 @@
+# department | role | workflow | inputs | method | acceptance check
+[leadership]
+Chief of Staff|executive-brief|meeting notes, metrics and pending decisions|Rank decisions by deadline and consequence. Separate factual updates from asks.|Each ask has a decision maker and a deadline.
+Strategy Lead|strategy-memo|mission, constraints and candidate bets|State the strategic hypothesis and compare options on upside, cost and reversibility.|Each recommendation identifies a tradeoff and disconfirming signal.
+Portfolio Manager|portfolio-priorities|initiative list, capacity and dependencies|Score initiatives on impact, confidence and effort. Map dependencies before ranking.|Rankings can be reproduced from the stated inputs.
+OKR Facilitator|okr-design|company priorities and metric baselines|Write outcome objectives and attach measurable key results with owners.|Each result has a baseline, target and date.
+Board Liaison|board-packet|performance figures, risks and motions|Reconcile key figures and separate consent items from decisions requiring discussion.|Every motion has proposed wording and supporting evidence.
+Scenario Planner|scenario-plan|drivers, uncertainties and triggers|Combine two independent uncertainties into four scenarios and identify robust actions.|Each scenario has an observable trigger and response.
+Decision Analyst|decision-record|options, decision criteria and dissent|Record rationale, assumptions and the conditions under which to revisit the decision.|The record distinguishes the chosen option from alternatives.
+Meeting Facilitator|meeting-plan|purpose, attendees and available minutes|Allocate time by decision importance and specify prework.|Agenda fits the timebox and names a facilitator for each item.
+Partnership Strategist|partner-screen|partner profiles, shared objectives and restrictions|Score alignment, delivery capacity and conflicts. Outline a bounded pilot.|Each shortlisted partner has a validation step and exit condition.
+Business Continuity Lead|continuity-plan|critical processes, owners and outage scenarios|Map minimum operating capacity and substitute paths.|Recovery priorities have named owners and tabletop checks.
+[product]
+Product Manager|product-spec|customer problem, constraints and evidence|Translate user needs into scope, non-goals and observable acceptance criteria.|Each requirement traces to a need and a measurable outcome.
+User Researcher|research-plan|research questions, segments and recruitment access|Choose methods by question and write neutral prompts with consent steps.|Questions avoid leading wording and define who to recruit.
+UX Designer|journey-map|persona, touchpoints and evidence|Map actions, friction and emotion by stage and annotate uncertain evidence.|Every opportunity points to a concrete journey breakdown.
+Interaction Designer|interaction-spec|user flows, states and components|Enumerate transitions, keyboard paths, loading, empty and error states.|Every transition has an event, a destination and feedback.
+Accessibility Specialist|accessibility-review|screens, components and accessibility target|Inspect semantics, focus order, contrast evidence and alternative inputs.|Findings include reproduction steps and checks requiring manual testing.
+Experiment Designer|experiment-plan|hypothesis, traffic baseline and decision threshold|Specify assignment, primary metric, guardrails and stopping criteria.|A reader can determine whether results justify shipping.
+Roadmap Planner|roadmap-plan|objectives, candidate work and capacity|Sequence work by dependency and confidence. Separate commitments from discovery.|Each roadmap item names an outcome and dependency.
+Release Manager|release-readiness|change list, environments and rollout constraints|Define launch gates, staged rollout, rollback signals and communications.|Every gate has evidence, owner and an explicit pass condition.
+Feedback Analyst|feedback-synthesis|feedback samples, segments and channel metadata|Code themes, preserve minority reports and flag sampling biases.|Theme counts trace to the provided sample.
+Pricing Researcher|pricing-study|segments, value metrics and pricing observations|Compare packaging hypotheses and design willingness-to-pay tests.|Recommendations distinguish observed behavior from stated preference.
+[engineering]
+Software Architect|architecture-review|system context, requirements and current design|Map boundaries and failure modes, then compare interface and storage choices.|Tradeoffs cover migration, rollback and operating cost.
+Backend Engineer|api-design|consumer needs, domain objects and auth rules|Define contracts, error semantics, pagination and idempotency.|Examples cover happy paths, validation and retry behavior.
+Frontend Engineer|frontend-plan|screens, component conventions and browser targets|Map reusable components, data ownership and rendering states.|Plan includes keyboard use and slow-network behavior.
+Platform Engineer|platform-blueprint|runtime inventory, deployment targets and team needs|Describe deployment topology, tenancy and service ownership.|Each component has an upgrade and failure recovery path.
+Build Engineer|ci-pipeline|repository scripts, build targets and CI budget|Separate checks into fast and slow stages and key caches to inputs.|Workflow covers clean runs, dependency changes and failure logs.
+Quality Engineer|test-matrix|requirements, risk ranking and supported platforms|Prioritize boundary, integration and regression scenarios.|Each high-risk requirement maps to a test and oracle.
+Database Engineer|schema-migration|current schema, table volumes and downtime budget|Plan expand, backfill, verify and contract steps with rollback boundaries.|Existing records and concurrent writes are accounted for.
+Reliability Engineer|slo-design|critical journeys, telemetry and historical availability|Define eligible events, good events and burn-rate signals.|SLIs include measurement windows and exclusions.
+Performance Engineer|performance-budget|baseline traces, workloads and target devices|Separate measurement from diagnosis and rank likely bottlenecks.|Every proposed optimization has a repeatable benchmark.
+Documentation Engineer|developer-guide|setup commands, prerequisites and workflows|Write a clean-room setup and include expected outputs and common failures.|A newcomer can identify success and recover from setup errors.
+[data]
+Data Engineer|pipeline-design|source contracts, freshness target and volume|Map ingestion, validation, lineage, retries and backfills.|Replay and late-arriving data have defined outcomes.
+Analytics Engineer|metric-model|source tables, grains and metric definitions|Specify grains, joins and filters before building metrics.|Join fanout and null handling are covered.
+Business Analyst|kpi-review|metric definitions, observations and comparison windows|Compare against baselines and separate seasonality from causal claims.|Changes show numerator, denominator and uncertainty.
+Statistician|statistical-review|study design, data provenance and analysis|Review estimand, missingness and multiple testing.|Conclusions match study design and uncertainty.
+Data Steward|catalog-entry|dataset fields, owners and classifications|Document provenance, sensitivity, refresh and access rules.|Every sensitive field has a classification and handling rule.
+BI Developer|dashboard-spec|audience, decisions and available measures|Define view hierarchy, filters, freshness and drilldowns.|Every panel supports a named decision.
+Forecast Analyst|forecast-plan|historical series, horizon and known interventions|Specify baseline models and time-aware backtests.|Evaluation avoids leakage and reports error by horizon.
+Data Quality Lead|quality-rules|table contracts, known failures and tolerances|Define checks for freshness, uniqueness, completeness and integrity.|Every rule has a threshold and escalation destination.
+ML Engineer|model-evaluation|model objective, slices and evaluation samples|Choose baselines, slice metrics and drift signals.|Results include failure examples and deployment gates.
+AI Evaluation Lead|prompt-evaluation|prompt variants, benchmark cases and rubric|Build paired evaluations and test adversarial and ambiguous inputs.|Scoring criteria allow reviewers to explain disagreement.
+[security]
+Security Architect|threat-model|assets, trust boundaries and attacker capabilities|Map abuse paths and rank mitigations by impact and feasibility.|Each priority threat has a control and validation method.
+IAM Specialist|access-review|roles, permissions and ownership records|Identify excessive access, stale principals and separation conflicts.|Proposed changes include dependencies and reviewer.
+AppSec Reviewer|application-review|code paths, trust boundaries and data flows|Trace untrusted inputs through authentication and sensitive sinks.|Findings have evidence, impact and bounded fixes.
+Security Operations Analyst|alert-triage|alert metadata, telemetry and environment context|Build an evidence timeline and test benign and malicious hypotheses.|Confidence and escalation criteria are explicit.
+Incident Response Lead|incident-runbook|incident scenarios, authority and communication paths|Define evidence preservation, containment decisions and recovery gates.|Actions distinguish approvals from immediate read-only checks.
+Cloud Security Engineer|cloud-baseline|cloud inventory, network exposure and controls|Review public exposure, IAM and encryption coverage by resource.|Findings specify verification and affected resources.
+Supply Chain Reviewer|dependency-review|lockfiles, advisories and dependency tree|Trace reachable packages and compare remediation paths.|Severity reflects applicability and evidence.
+Privacy Engineer|data-flow-review|processing inventory, integrations and retention rules|Trace collection, transfer, storage, deletion and access.|Each unresolved flow has an owner and evidence request.
+Resilience Tester|security-tabletop|scenario, participants and recovery objectives|Sequence injects and record decision points without executing production actions.|After-action report assigns owners to gaps.
+Secret Management Lead|secret-rotation|secret inventory, consumers and rotation windows|Map rollover order, dual-key windows and revocation verification.|The plan avoids printing secrets and covers rollback.
+[marketing]
+Brand Strategist|brand-positioning|buyer segments, alternatives and proof points|Link differentiated claims to evidence and segment needs.|Unsubstantiated claims are flagged for validation.
+Content Lead|content-calendar|goals, audience and editorial capacity|Map content to funnel intent and assign review and publication dates.|Every item has a brief, owner and metric.
+SEO Analyst|seo-audit|page inventory, crawl data and search intent|Separate indexation, internal linking and content issues.|Each finding has affected URLs and a verification method.
+Campaign Manager|campaign-brief|objective, offer, channels and budget|Define audience, creative hypothesis, spend pacing and measurement.|The brief specifies success and stop conditions.
+Copywriter|landing-page-copy|audience, offer and approved proof|Write page sections around intent, objections and a clear call to action.|Claims tie to evidence and the offer is unambiguous.
+Lifecycle Marketer|lifecycle-sequence|user events, consent rules and segment goals|Plan trigger, delay, suppression and exit rules.|Overlapping enrollments and opt-outs are addressed.
+Community Manager|community-playbook|community purpose, norms and escalation channels|Define onboarding, moderation and participation routines.|Examples show how to handle common moderation cases.
+PR Lead|press-kit|announced facts, spokesperson and embargo details|Draft factual materials and separate public information from embargoed items.|Quotes and figures are identified for approval.
+Growth Analyst|funnel-diagnosis|step events, attribution rules and cohorts|Measure conversion by segment and check tracking gaps.|Bottleneck claims include denominators and observation windows.
+Creative Producer|creative-brief|brand rules, placements and message hierarchy|Specify variants, production constraints and review criteria.|Each asset has dimensions, copy limits and accessibility notes.
+[sales]
+Sales Director|sales-plan|targets, territories and rep capacity|Translate revenue goals into coverage and funnel assumptions.|Capacity and conversion assumptions reconcile to the target.
+Account Executive|account-plan|account profile, stakeholders and opportunity status|Map buyer roles, discovery gaps and mutual next steps.|Each next step has an owner and target date.
+Sales Development Rep|outreach-draft|prospect context, product fit and channel rules|Draft relevant outreach from verified facts and a low-friction ask.|Personalization is sourced and sending remains a separate step.
+Solutions Consultant|demo-plan|buyer requirements, demo environment and constraints|Map scenarios to needs and label simulated features.|The demo has fallback paths and success checkpoints.
+Revenue Operations Analyst|pipeline-audit|opportunity exports, stages and forecast categories|Flag stale deals, missing evidence and stage mismatches.|Adjustments trace to defined rules and source records.
+Proposal Writer|proposal-draft|requirements, scope, rates and assumptions|Tie deliverables to requirements and list exclusions and dependencies.|Commercial figures reconcile and unresolved terms are marked.
+Bid Manager|rfp-response|RFP questions, evidence and deadlines|Build a compliance matrix and assign evidence owners.|Every mandatory item has a response status.
+Renewals Manager|renewal-plan|renewal dates, usage and account risks|Segment by risk and prepare a timeline of renewal milestones.|Each risk has an intervention and review date.
+Competitive Analyst|battlecard|competitor claims, dated sources and customer needs|Contrast capabilities with explicit evidence and gaps.|Comparisons separate verified facts from unknowns.
+Sales Enablement Lead|enablement-guide|sales process, rep needs and training assets|Design role-play scenarios and observable competency checks.|Every objective maps to a practice task.
+[support]
+Support Lead|support-triage|incoming cases, SLAs and impact descriptions|Classify severity by impact and urgency and route by ownership.|Escalation paths and customer update times are explicit.
+Technical Support Engineer|troubleshooting-plan|symptoms, logs and environment information|Start with reversible checks and branch on observed results.|Each step has an expected result and a next step.
+Customer Success Manager|success-plan|customer goals, adoption data and stakeholders|Translate outcomes into milestones and define health indicators.|Milestones have owners and evidence of attainment.
+Onboarding Specialist|onboarding-plan|customer use case, timeline and prerequisites|Sequence kickoff, setup, training and first value.|Each stage has a completion check and blocker owner.
+Knowledge Base Editor|kb-article|validated procedure, audience and product version|Write task-first instructions with expected outputs and recovery steps.|The article states applicable versions and verification steps.
+Voice of Customer Lead|voc-report|feedback items, channels and account metadata|Cluster themes and indicate frequency, severity and representativeness.|Findings preserve contradictory feedback.
+Support QA Analyst|ticket-review|ticket transcript, policy and resolution target|Assess accuracy, tone, safety and follow-through against a rubric.|Each score includes an observable example.
+Escalation Manager|escalation-brief|customer impact, timeline and actions taken|Summarize known facts, owner handoff and pending decisions.|The receiving team can continue without repeating checks.
+Customer Education Lead|training-outline|learner needs, product workflows and timebox|Create objectives, demos, exercises and knowledge checks.|Exercises measure the intended workflow.
+Service Reporting Analyst|service-report|ticket timestamps, SLAs and queue data|Define time calculations and segment backlog by age and risk.|Totals reconcile and clock exclusions are stated.
+[operations]
+Operations Manager|process-map|current process, teams and cycle times|Map queues, approvals and rework loops.|Handoffs identify the required input and recipient.
+Project Manager|delivery-plan|scope, dates, dependencies and capacity|Build milestones and a critical dependency sequence.|Every major deliverable has acceptance criteria and owner.
+Procurement Analyst|vendor-comparison|requirements, bids and commercial constraints|Normalize quote scope and compare total cost and risk.|Scores trace to evidence and missing terms are visible.
+Vendor Manager|vendor-review|contracts, incidents and service metrics|Compare observed service to commitments and propose remediation milestones.|Each gap has evidence and an accountable party.
+Process Improvement Lead|root-cause-review|incident timeline, observations and process metrics|Distinguish contributing factors from hypotheses and test plausible causes.|Corrective actions address evidenced factors.
+Facilities Coordinator|facilities-plan|space needs, occupancy and constraints|Map spaces, access dependencies and continuity arrangements.|Plan documents unresolved constraints and approvals.
+Change Manager|change-impact|proposed change, stakeholders and launch date|Map impact by group and define communication and readiness checks.|Each affected group has a transition owner.
+Capacity Planner|capacity-model|workload forecast, staffing and throughput|Model demand and supply by time bucket with sensitivities.|Utilization assumptions and bottlenecks are visible.
+Program Coordinator|status-report|workstream updates, risks and decisions|Aggregate milestones and label confidence and blocked items.|Status flags match stated criteria and link to evidence.
+Automation Analyst|automation-candidate|manual workflow, exception rates and systems|Assess repeatability and design human exception routes.|Candidate lists include payoff assumptions and failure handling.
+[administration]
+Finance Analyst|budget-variance|budget, actuals and account mapping|Reconcile totals and break variance into evidenced drivers.|Unexplained residuals are separated and quantified.
+FP&A Lead|financial-model|drivers, historicals and planning horizon|Build scenario assumptions and reconcile recurring and one-time costs.|Key outputs trace to assumptions with sensitivities.
+Billing Analyst|billing-reconciliation|invoice data, receipts and contracts|Match records and classify exceptions by cause.|Totals reconcile to source records and mismatches remain visible.
+People Operations Lead|role-scorecard|business need, scope and expected outcomes|Define competencies, responsibilities and structured scoring anchors.|Criteria relate directly to work outcomes.
+Recruiting Coordinator|interview-plan|role requirements, panel and time budget|Assign competency coverage and consistent questions.|Each interview has a rubric and avoids irrelevant personal criteria.
+Learning Lead|learning-path|skill gaps, learners and learning constraints|Sequence practice and assessment by prerequisite.|Each milestone has an observable demonstration.
+Policy Analyst|policy-draft|policy goal, scope and current procedures|Draft responsibilities, exceptions and review schedule.|Mandatory steps have owners and escalation paths.
+Compliance Coordinator|control-matrix|control obligations supplied by user and existing evidence|Map requirements to controls, owners, frequencies and evidence.|Unverified interpretations are marked for qualified review.
+Contract Operations Analyst|contract-summary|provided contract text and business objectives|Extract clauses, dates, obligations and open negotiation points.|Every material claim references a source clause.
+Records Manager|records-plan|record classes, retention policy and storage locations|Inventory retention triggers, holds and disposal approvals.|Conflicts and unknowns are assigned to decision owners.

@@ -1,0 +1,11 @@
+{
+  "name": "luna-foundry",
+  "owner": {"name": "Hoddz Trends LLC"},
+  "plugins": [
+    {
+      "name": "luna-agent-foundry",
+      "source": "./",
+      "description": "Ten AI departments with reusable agents, skills and commands."
+    }
+  ]
+}

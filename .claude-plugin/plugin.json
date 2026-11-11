@@ -1,0 +1,8 @@
+{
+  "name": "luna-agent-foundry",
+  "version": "1.0.0",
+  "description": "Company-in-a-box for Claude Code with 100 agents, 310 skills and 115 commands.",
+  "author": {"name": "Hoddz Trends LLC"},
+  "license": "MIT",
+  "repository": "https://github.com/Hoddz-Trends-LLC/luna-agent-foundry"
+}
